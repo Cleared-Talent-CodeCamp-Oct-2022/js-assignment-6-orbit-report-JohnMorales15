@@ -15,9 +15,13 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		for(i = 0; i < satellite.length; i++){
+			if(satellite.type === 'Space Debris');
+			return true;
+		} else {
+			return false;
+		}
    }
-
 }
 
 // TODO 3a: fix isSpaceDebris check
